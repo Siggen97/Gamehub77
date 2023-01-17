@@ -2,8 +2,13 @@ body {
   background-color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header {
+  background-color: #1f2c3a; 
+  padding: 10px;
+  border-radius: 5px;
+}
 .logo {
-  padding: 20px;
+  padding: 10px;
   text-align:center;
   align-content:center;
   justify-content: center;
@@ -27,12 +32,14 @@ h2 {
   text-align: center;
 }
 #userikon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 #cart {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .navbar {
   display: flex;
@@ -137,7 +144,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-evenly;
+  column-gap: 40px;
 }
 .footer {
   font-size: 12px;
