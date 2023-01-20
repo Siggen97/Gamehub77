@@ -6,6 +6,7 @@ header {
   background-color: #1f2c3a; 
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 10px 10px 25px black;
 }
 .logo {
   padding: 10px;
@@ -24,11 +25,14 @@ header {
 h1 {
   font-size: 30px;
   color: white;
+  text-shadow: 1px 1px 3px white;
   text-align: center;
+  
 }
 h2 {
   font-size: 20px;
   color: #f3aa4e;
+  text-shadow: 1px 1px 2px white;
   text-align: center;
 }
 #userikon {
@@ -49,8 +53,8 @@ h2 {
   background-color: #1f2c3a;
   color: black;
   padding: 2px;
-  border: 1px solid;
   border-radius: 5px;
+  box-shadow: 10px 10px 25px black;
 }
 .navbar a {
   color: white;
@@ -59,6 +63,8 @@ h2 {
   line-height: 1.5;
   padding: 12px;
   margin: auto;
+  border-radius: 5px;
+  
 }
 .gamingplatform {
   display: flex;
@@ -95,14 +101,15 @@ hr {
     justify-content: center;
     justify-items: center;
     margin-top: 50px;
-}
-.headimg a {
+  }
+  .headimg a {
     text-decoration: none;
     color: black;
-}
-.headimg img {
+  }
+  .headimg img {
     width: max-content;
     height: max-content;
+    box-shadow: 10px 10px 25px black;
 }
 .content a {
   display: block;
@@ -154,4 +161,14 @@ img {
   background-color: #1f2c3a;
   border-radius: 5px;
   display:flex;
+}
+.footerbox1 {
+  margin-left: 20px;
+}
+.footerbox2 {
+  margin-left: 25px;
+}
+
+.navbar a:hover {
+  background-color: #f3aa4e;
 }
