@@ -3,15 +3,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
-  background-color: #1f2c3a; 
+  background-color: #1f2c3a;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 10px 10px 25px black;
 }
 .logo {
   padding: 10px;
-  text-align:center;
-  align-content:center;
+  text-align: center;
+  align-content: center;
   justify-content: center;
   background-color: #1f2c3a;
   display: flex;
@@ -27,7 +27,6 @@ h1 {
   color: white;
   text-shadow: 1px 1px 3px white;
   text-align: center;
-  
 }
 h2 {
   font-size: 20px;
@@ -63,7 +62,9 @@ h2 {
   padding: 12px;
   margin: auto;
   border-radius: 5px;
-  
+}
+.navbar a:hover {
+  background-color: #f3aa4e;
 }
 .gamingplatform {
   display: flex;
@@ -94,80 +95,41 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.headimg {
-    display: grid;
-    flex-direction: column;
+.contact {
+    display: flex;
     justify-content: center;
-    justify-items: center;
-    margin-top: 50px;
-  }
-  .headimg a {
-    text-decoration: none;
-    color: black;
-  }
-  .headimg img {
-    width: max-content;
-    height: max-content;
-    box-shadow: 10px 10px 25px black;
+    column-gap: 10px;
 }
-.content a {
-  display: block;
-  color: black;
-  padding: 5px;
-  margin-top: 10px;
-  text-decoration: none;
+.contactbox1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;  
 }
-img {
-  width: 300px;
-  height: 200px;
-  border-radius: 5px;
+.contactbox2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    row-gap: 10px;
+    font-size: 10px;
+    width: 350px;
+    height: 400px;
+    background-color: antiquewhite;
+    line-height: 1.5;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;  
 }
-.gameitem {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 10px;
+.contactbox2 input {
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
 }
-.container2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 30px;
-  margin-top: 60px;
-  margin-bottom: 150px;
-}
-.container3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 30px;
-  margin-top: 60px;
-  margin-bottom: 150px;
-}
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 40px;
-}
-.footer {
-  font-size: 12px;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #1f2c3a;
-  border-radius: 5px;
-  display:flex;
-}
-.footerbox1 {
-  margin-left: 20px;
-}
-.footerbox2 {
-  margin-left: 25px;
-}
-
-.navbar a:hover {
-  background-color: #f3aa4e;
+#sendbutton {
+    background-color: #f3aa4e;
 }
