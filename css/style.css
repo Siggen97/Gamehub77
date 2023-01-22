@@ -3,15 +3,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
-  background-color: #1f2c3a; 
-  padding: 10px;
-  border-radius: 5px;
+  background-color: #1f2c3a;
+  padding: 5px;
+  border-radius: px;
   box-shadow: 10px 10px 25px black;
 }
 .logo {
-  padding: 10px;
-  text-align:center;
-  align-content:center;
+  padding: 5px;
+  text-align: center;
+  align-content: center;
   justify-content: center;
   background-color: #1f2c3a;
   display: flex;
@@ -27,7 +27,6 @@ h1 {
   color: white;
   text-shadow: 1px 1px 3px white;
   text-align: center;
-  
 }
 h2 {
   font-size: 20px;
@@ -47,41 +46,41 @@ h2 {
 }
 .navbar {
   display: flex;
-  margin: auto;
-  width: auto;
+  justify-content: center;
+  justify-content: space-around;
   background-color: #1f2c3a;
-  color: black;
-  padding: 2px;
-  border-radius: 5px;
   box-shadow: 10px 10px 25px black;
 }
 .navbar a {
   color: white;
   font-size: 15px;
   text-decoration: none;
-  line-height: 1.5;
-  padding: 12px;
-  margin: auto;
-  border-radius: 5px;
-  
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.navbar a:hover {
+  background-color: #f3aa4e;
 }
 .gamingplatform {
   display: flex;
-  margin: auto;
+  justify-content: center;
+  column-gap: 40px;
+  margin-top: 20px;
 }
 .gamingplatform img {
   width: 30px;
   height: 30px;
-  padding: 10px;
 }
 .gamecatogory {
   display: flex;
-  margin: auto;
+  justify-content: center;
+  column-gap: 100px;
 }
 .gamecatogory a {
-  padding-left: 60px;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   text-decoration: none;
   font-size: 12px;
   color: black;
@@ -95,20 +94,20 @@ hr {
   flex-direction: column;
 }
 .headimg {
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 50px;
-  }
-  .headimg a {
-    text-decoration: none;
-    color: black;
-  }
-  .headimg img {
-    width: max-content;
-    height: max-content;
-    box-shadow: 10px 10px 25px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.headimg a {
+  text-decoration: none;
+  color: black;
+}
+.headimg img {
+  width: 500px;
+  height: 250px;
+  box-shadow: 10px 10px 25px black;
 }
 .content a {
   display: block;
@@ -120,14 +119,12 @@ hr {
 img {
   width: 300px;
   height: 200px;
-  border-radius: 5px;
 }
 .gameitem {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   border: 2px solid;
-  border-radius: 5px;
   padding: 10px;
 }
 .container2 {
@@ -146,6 +143,15 @@ img {
   margin-top: 60px;
   margin-bottom: 150px;
 }
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+#price {
+  background-color: #f3aa4e;
+  border: 1px solid black;
+}
 .content {
   display: flex;
   flex-direction: row;
@@ -158,16 +164,11 @@ img {
   padding: 10px;
   margin-top: 20px;
   background-color: #1f2c3a;
-  border-radius: 5px;
-  display:flex;
+  display: flex;
 }
 .footerbox1 {
   margin-left: 20px;
 }
 .footerbox2 {
   margin-left: 25px;
-}
-
-.navbar a:hover {
-  background-color: #f3aa4e;
 }
