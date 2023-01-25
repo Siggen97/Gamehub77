@@ -5,44 +5,47 @@ body {
 header {
   background-color: #1f2c3a;
   padding: 5px;
-  border-radius: px;
   box-shadow: 10px 10px 25px black;
 }
 .logo {
-  padding: 5px;
   text-align: center;
   align-content: center;
   justify-content: center;
   background-color: #1f2c3a;
   display: flex;
-  margin: auto;
-  border-radius: 5px;
 }
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  padding: 8px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  text-shadow: 1px 1px 3px white;
+  text-shadow: 1px 1px 10px black;
   text-align: center;
 }
 h2 {
-  font-size: 20px;
+  font-size: 15px;
   color: #f3aa4e;
-  text-shadow: 1px 1px 2px white;
+  text-shadow: 1px 1px 10px black;
   text-align: center;
 }
 #userikon {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: antiquewhite;
 }
 #cart {
   width: 30px;
   height: 30px;
+  margin-right: 5px;
+}
+.user-cart {
+  display: flex;
+  justify-content: space-between;
 }
 .navbar {
   display: flex;
@@ -55,8 +58,8 @@ h2 {
   color: white;
   font-size: 15px;
   text-decoration: none;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -67,7 +70,7 @@ h2 {
   display: flex;
   justify-content: center;
   column-gap: 40px;
-  margin-top: 20px;
+  padding: 10px;
 }
 .gamingplatform img {
   width: 30px;
@@ -86,7 +89,7 @@ h2 {
   color: black;
 }
 hr {
-  width: 700px;
+  width: 1000px;
   margin: auto;
 }
 .container1 {
@@ -108,6 +111,9 @@ hr {
   width: 500px;
   height: 250px;
   box-shadow: 10px 10px 25px black;
+  margin: 10px;
+  border: 3px black solid;
+  
 }
 .content a {
   display: block;
@@ -117,15 +123,15 @@ hr {
   text-decoration: none;
 }
 img {
-  width: 300px;
+  width: 320px;
   height: 200px;
 }
 .gameitem {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  border: 2px solid;
-  padding: 10px;
+  padding: 8px;
+  box-shadow: 10px 10px 25px black;
 }
 .container2 {
   display: flex;
@@ -148,9 +154,8 @@ img {
   justify-content: space-between;
   margin-bottom: 5px;
 }
-#price {
+a button{
   background-color: #f3aa4e;
-  border: 1px solid black;
 }
 .content {
   display: flex;
@@ -161,14 +166,60 @@ img {
 .footer {
   font-size: 12px;
   color: white;
-  padding: 10px;
   margin-top: 20px;
   background-color: #1f2c3a;
   display: flex;
 }
 .footerbox1 {
-  margin-left: 20px;
+  padding: 15px;
 }
 .footerbox2 {
-  margin-left: 25px;
+  padding: 15px;
+}
+
+
+
+
+h5 {
+  text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.contactbox1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    padding: 10px;
+    font-size: 15px;  
+}
+.contactbox2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    row-gap: 10px;
+    font-size: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: antiquewhite;
+    line-height: 1.5;
+    border: 1px solid;
+    padding: 10px;  
+}
+.contactbox2 input {
+    width: 210px;
+    height: 20px;
+    border-radius: 5px;
+}
+#sendbutton {
+    background-color: #f3aa4e;
+    width: 80px;
+    height: 30px;
 }
