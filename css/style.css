@@ -1,6 +1,9 @@
 body {
   background-color: antiquewhite;
   font-family: Arial, Helvetica, sans-serif;
+  @media screen {
+    
+  }
 }
 header {
   background-color: #1f2c3a;
@@ -51,8 +54,12 @@ h2 {
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-color: #1f2c3a;
   box-shadow:  0.6rem 0.6rem 1.6rem black;
+  @media phone (max-width:768px) {
+    width: 40rem; 
+  }
 }
 .navbar a {
   color: white;
@@ -62,6 +69,9 @@ h2 {
   padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  @media phone (max-width: 768px) {
+    font-size: 0.5rem;
+  }
 }
 .navbar a:hover {
   background-color: #f3aa4e;
@@ -79,6 +89,7 @@ h2 {
 .gamecatogory {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   column-gap: 6rem;
 }
 .gamecatogory a {
@@ -110,6 +121,9 @@ hr {
 .container1 {
   display: flex;
   flex-direction: column;
+  @media phone {
+    
+  }
 }
 .headimg {
   display: flex;
@@ -127,6 +141,10 @@ hr {
   height: 13rem;
   box-shadow: 0.6rem 0.6rem 1.6rem black;
   margin: 0.6rem;
+  @media phone (max-width: 768px) {
+    width: 15rem;
+    height: 8rem;
+  }
 }
 .content a {
   display: block;
@@ -150,6 +168,7 @@ img {
 .container2 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   row-gap: 2rem;
   margin-top: 4rem;
@@ -179,6 +198,7 @@ a button {
 .content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 3rem;
 }
