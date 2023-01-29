@@ -135,6 +135,7 @@ hr {
 .headimg a {
   text-decoration: none;
   color: black;
+  font-size: medium;
 }
 .headimg img {
   width: 25rem;
@@ -149,7 +150,7 @@ hr {
 .content a {
   display: block;
   color: black;
-  font-size: x-small;
+  font-size: small;
   padding: 0.3rem;
   margin-top: 0.6rem;
   text-decoration: none;
@@ -267,8 +268,8 @@ h5 {
   row-gap: 0.6rem;
 }
 #add-to-cart {
-  width: 6rem;
-  height: 3rem;
+  width: 5rem;
+  height: 2rem;
   border-radius: 5%;
 }
 /* checkoutpage */
@@ -350,11 +351,11 @@ h5 {
   justify-content: space-between;
 }
 #submit {
-  position: relative;
-  left: 39rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
   background-color: #f3aa4e;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5%;
+  align-self: flex-end;
 }
 /* about-us Page */
 .about-us-info {
