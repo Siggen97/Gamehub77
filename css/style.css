@@ -221,7 +221,6 @@ h5 {
   margin-top: 0.3rem;
   width: 13rem;
   height: 13rem;
-  border: 0.06rem solid;
   padding: 0.6rem;
   font-size: 1rem;
 }
@@ -356,4 +355,21 @@ h5 {
   margin-top: 2rem;
   margin-bottom: 3rem;
   background-color: #f3aa4e;
+}
+/* about-us Page */
+.about-us-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 1rem;
+  width: 30rem;
+  row-gap: 0.1rem;
+}
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.about-us-info p {
+  font-size: smaller;
 }
