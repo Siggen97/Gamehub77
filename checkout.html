@@ -52,27 +52,62 @@
     <div class="checkout-container1">
       <div class="checkout-item">
         <img src="images/marvel-spider.jpeg" alt="marvel-spider" />
-          <a href="spiderman.html">Spider-Man</a>
-          <a id="price" href="checkout.html">49.90 $ </a>
+        <a href="spiderman.html">Spider-Man</a>
+        <a id="price" href="checkout.html">49.90 $ </a>
       </div>
     </div>
-    <hr>
     <div class="checkout-container2">
-      <div class="paymentinfo">
-        <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname">
-        <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname">
-        <label for="email">Email</label>
-        <input type="email">
-        <label for="birth">Birth</label>
-        <input type="date">
+      <div class="payment">
+        <div class="paymentinfo">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" />
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" id="lname" />
+          <label for="email">Email</label>
+          <input type="email" />
+          <label for="birth">Birth</label>
+          <input type="date" />
+        </div>
+        <div class="payment-card-info">
+          <label for="cardnumber">Card Number</label>
+          <input
+            type="text"
+            name="cardnumber"
+            placeholder="0000 0000 0000 0000"
+            id="cardnumber"
+          />
+          <label for="expirydate">Expiry Date</label>
+          <input type="text" name="expdate" placeholder="MM/YY" />
+          <label for="cvc">CVC</label>
+          <input type="text" name="cvc" placeholder="000" />
+        </div>
       </div>
       <div class="checkout-summary">
-          <img src="images/marvel-spider.jpeg" alt="marvel-spider" />
-            <a href="spiderman.html">Spider-Man</a>
-            <a id="price" href="checkout.html">49.90 $ </a>
+        <img src="images/marvel-spider.jpeg" alt="marvel-spider" />
+        <a href="spiderman.html">Spider-Man</a>
+        <div class="total-price">
+          <p>Total</p>
+          <p>$49.90</p>
+        </div>
       </div>
     </div>
+    <input type="button" value="Submit" id="submit" />
+    <footer>
+      <div class="footer">
+        <div class="footerbox1">
+          <p>GameHub</p>
+          <li>Terms of use</li>
+          <li>Privacy Policy</li>
+          <li>FAQ</li>
+          <p>Trustpolice</p>
+        </div>
+        <div class="footerbox2">
+          <p>Contact us</p>
+          <li>Phone</li>
+          <li>Email</li>
+          <li>Chat</li>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

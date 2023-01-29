@@ -272,6 +272,7 @@ h5 {
   border-radius: 5%;
 }
 /* checkoutpage */
+
 .checkout-container1 {
   display: flex;
   justify-content: center;
@@ -296,14 +297,56 @@ h5 {
   flex-direction: row;
   justify-content: center;
   column-gap: 2rem;
+  
 }
 .paymentinfo {
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 15rem;
+  padding: 0.3rem;
+  margin-top: 2rem;
+  row-gap: 0.3rem;
+  border: 1px solid black;
+}
+.payment-card-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 0.3rem;
+  row-gap: 0.3rem;
+  border: 1px solid black;
+}
+.payment-card-info input {
+  width: 4rem;
+}
+#cardnumber {
+  width: 9rem;
 }
 .checkout-summary {
   display: flex;
-  flex-direction: row;
-  width: 20rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 12rem;
+  padding: 0.4rem;
+  row-gap: 1.5rem;
+  border: 1px solid black;
+  height: 14rem;
+  margin-top: 2rem;
+}
+.checkout-summary img {
+  width: 12rem;
+  height: 7rem;
+}
+.checkout-summary a {
+  text-decoration: none;
+}
+.total-price {
+  display: flex;
+  justify-content: space-between;
+}
+#submit {
+  position: relative;
+  left: 39rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
