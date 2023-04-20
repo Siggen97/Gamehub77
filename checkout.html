@@ -1,116 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+  <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
-    <meta name="description" content="Here you can view your basket and the page also sums up the price. You will also have to add your card and personal information before you can pae and order">
-    <title>GH-Checkout</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Gamehub is a website were you can buy video games for PC. The website is always up to date, with price and the newest games out there.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Game Hub</title>
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <div>
-          <h1>GameHub</h1>
-          <h2>The Universe of Games</h2>
-        </div>
-        <img src="images/headphones.png" alt="headphones" />
-      </div>
+      <h1>GameHub</h1>
+      <h3>The Universe of Gaming</h3>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="all-games.html">All Games</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="forum.html">GameHub Forum</a>
+      </nav>
       <div class="user-cart">
-        <a href=""
-          ><img src="images/user.png" alt="usericon" id="userikon"
-        /></a>
-        <a href="checkout.html"
-          ><img src="images/shopping-cart.png" alt="cart" id="cart"
-        /></a>
+        <a href=""><img src="images/user.png" alt="user-icon"></a>
+        <a href=""><img src="images/shopping-cart.png" alt="cart-icon"></a>
       </div>
-      <div class="container1">
-        <div class="navbar" id="navbar">
-          <a href="index.html">HOME</a>
-          <a href="games.html">ALL GAMES</a>
-          <a href="index.html">FREE GAMES</a>
-          <a href="index.html">COMING SOON</a>
-          <a href="about.html">ABOUT</a>
-          <a href="contact.html">CONTACT</a>
-        </div>
     </header>
-      <div class="gamingplatform">
-        <img src="images/playstation.png" alt="playstation" />
-        <img src="images/xbox-logo.png" alt="xbox" />
-        <img src="images/nintendo-switch.png" alt="nintendo" />
-        <img src="Images/computer.png" alt="computer" />
-      </div>
-      <div class="gamecatogory">
-        <a href="">Adventure</a>
-        <a href="">Sport</a>
-        <a href="">Action</a>
-        <a href="">Multiplayer</a>
-      </div>
-    </div>
-    <hr />
-    <div class="checkout-container1">
-      <div class="checkout-item">
-        <img src="images/marvel-spider.jpeg" alt="marvel-spider" />
-        <a href="spiderman.html">Spider-Man</a>
-        <a id="price" href="checkout.html">$ 49.90</a>
-      </div>
-    </div>
-    <div class="checkout-container2">
-      <div class="payment">
-        <div class="paymentinfo">
-          <label for="fname">First Name</label>
-          <input type="text" name="fname" id="fname" />
-          <label for="lname">Last Name</label>
-          <input type="text" name="lname" id="lname" />
-          <label for="email">Email</label>
-          <input type="email" />
-          <label for="birth">Birth</label>
-          <input type="date" />
-        </div>
-        <div class="payment-card-info">
-          <label for="cardnumber">Card Number</label>
-          <input
-            type="text"
-            name="cardnumber"
-            placeholder="0000 0000 0000 0000"
-            id="cardnumber"
-          />
-          <label for="expirydate">Expiry Date</label>
-          <input type="text" name="expdate" placeholder="MM/YY" />
-          <label for="cvc">CVC</label>
-          <input type="text" name="cvc" placeholder="000" />
+    <main>
+      <div class="checkout-container1">
+        <div class="checkout-item">
+          <img src="images/marvel-spider.jpeg" alt="marvel-spider" />
+          <a href="spiderman.html">Spider-Man</a>
+          <a id="price" href="checkout.html">$ 49.90</a>
         </div>
       </div>
-      <div class="checkout-summary">
-        <img src="images/marvel-spider.jpeg" alt="marvel-spider" />
-        <a href="spiderman.html">Spider-Man</a>
-        <div class="total-price">
-          <p>Total</p>
-          <p>$49.90</p>
+      <div class="checkout-container2">
+        <div class="payment">
+          <div class="paymentinfo">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" />
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" />
+            <label for="email">Email</label>
+            <input type="email" />
+            <label for="birth">Birth</label>
+            <input type="date" />
+          </div>
+          <div class="payment-card-info">
+            <label for="cardnumber">Card Number</label>
+            <input type="text" name="cardnumber" placeholder="0000 0000 0000 0000" id="cardnumber" />
+            <label for="expirydate">Expiry Date</label>
+            <input type="text" name="expdate" placeholder="MM/YY" />
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" placeholder="000" />
+          </div>
+        </div>
+        <div class="checkout-summary">
+          <img src="images/marvel-spider.jpeg" alt="marvel-spider" />
+          <a href="spiderman.html">Spider-Man</a>
+          <div class="total-price">
+            <p>Total</p>
+            <p>$49.90</p>
+          </div>
+        </div>
+        <div id="submit">
+          <input type="button" value="Submit" id="submit" />
         </div>
       </div>
-      <div id="submit">
-        <input type="button" value="Submit" id="submit" />
-      </div>
-    </div>
-    <footer>
-      <div class="footer">
-        <div class="footerbox1">
-          <p>GameHub</p>
-          <li>Terms of use</li>
-          <li>Privacy Policy</li>
-          <li>FAQ</li>
-          <p>Trustpolice</p>
-        </div>
-        <div class="footerbox2">
-          <p>Contact us</p>
-          <li>Phone</li>
-          <li>Email</li>
-          <li>Chat</li>
-        </div>
-      </div>
-    </footer>
+    </main>
   </body>
-</html>
+
+  </html>
