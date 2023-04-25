@@ -25,8 +25,7 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div></div>
+        <section class="gameProduct">
         </section>
 
         <script>
@@ -46,27 +45,35 @@
 
                     const productTitle = document.createElement('h3');
                     productTitle.innerText = data.title;
-                    game2Div.appendChild(productTitle);
-
+                    outerDiv.appendChild(productTitle);
+                    
                     const productImage = document.createElement('img');
                     productImage.src = data.image;
                     game2Div.appendChild(productImage);
-
+                    
                     const productPrice = document.createElement('p');
                     productPrice.innerText = 'Price: ' + data.price;
                     game2Div.appendChild(productPrice);
-
+                    
                     const releaseDate = document.createElement('p');
                     releaseDate.innerText = 'Release Date: ' + data.released;
                     game2Div.appendChild(releaseDate);
-
+                    
                     const ageRating = document.createElement('p');
                     ageRating.innerText = data.ageRating;
                     game2Div.appendChild(ageRating);
-
+                    
+                    const titleDescription = document.createElement('div');
+                    titleDescription.classList.add('titleDescription');
+                    
                     const description = document.createElement('p');
+                    description.classList.add('gameDescription');
                     description.innerText = data.description;
-                    outerDiv.appendChild(description);
+                    titleDescription.appendChild(productTitle)
+                    titleDescription.appendChild(description);
+                    outerDiv.appendChild(titleDescription);
+                    
+
 
                     document.querySelector('section').appendChild(outerDiv);
 

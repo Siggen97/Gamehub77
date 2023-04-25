@@ -49,23 +49,7 @@ footer div {
 footer div a {
   color: #ffb703;
 }
-.user-cart {
-  position: absolute;
-  right: 2%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-.user-cart a img {
-  width: 40px;
-  height: 40px;
-  padding: 2px;
-  border-radius: 30px;
-}
-.user-cart a img:hover {
-  background-color: #ffb703;
-  transition: 0.5s;
-}
+
 main .head-games {
   display: flex;
   flex-direction: column;
@@ -75,7 +59,6 @@ main .head-games {
 }
 main .head-games div {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 .PC-game {
@@ -84,13 +67,8 @@ main .head-games div {
   align-items: center;
 }
 .PC-game img {
-  width: 30rem;
+  width: 20rem;
   padding: 5px;
-}
-@media (max-width: 768px) {
-  .PC-game img {
-    width: 15rem;
-  }
 }
 .PC-game:hover {
   border: #ffb703 1px solid;
@@ -99,7 +77,7 @@ main .head-games div {
 .PC-game h3 a {
   color: #ffb703;
 }
-main .all-games, section {
+main section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -108,8 +86,8 @@ main .all-games, section {
 }
 main section div {
   display: flex;
-  justify-content: center;
-  width: 19rem;
+  align-items: flex-start;
+  width: 20rem;
 }
 .PC-game2 {
   display: flex;
@@ -118,9 +96,23 @@ main section div {
   background-color: #4ca9c033;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  padding: 10px;
-  width: 15rem;
+  padding: 15px;
+  border-radius: 20px;
+  width: 30rem;
 }
 .PC-game2 img {
+  width: 25rem;
+}
+.gameProduct div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.titleDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.titleDescription p {
   width: 15rem;
 }
