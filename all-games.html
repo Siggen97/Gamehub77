@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/data/gamedetail.js"></script>
     <title>All Games</title>
 </head>
 
@@ -22,12 +23,40 @@
             <a href="forum.html">GameHub Forum</a>
         </nav>
         <div class="user-cart">
-            <a href=""><img src="images/user.png"alt="user-icon"></a>
-            <a href=""><img src="images/shopping-cart.png"alt="cart-icon"></a>
+            <a href=""><img src="images/user.png" alt="user-icon"></a>
+            <a href=""><img src="images/shopping-cart.png" alt="cart-icon"></a>
         </div>
     </header>
     <main>
-        <section class="all-games">
+        <section></section>
+        <script>
+            fetch('https://api.noroff.dev/api/v1/gamehub')
+                .then(res => {
+                    return res.json();
+                })
+                .then(data => {
+                    console.log(data)
+                    data.forEach(game => {
+                        const outerDiv = document.createElement('div');
+                        const game2Div = document.createElement('div');
+                        game2Div.classList.add('PC-game2');
+                        outerDiv.appendChild(game2Div);
+
+                        const img = document.createElement('img');
+                        img.src = game.image;
+
+                        game2Div.appendChild(img);
+
+                        const title = document.createElement('title');
+                        
+
+                        document.querySelector('section').appendChild(outerDiv);
+                    })
+                })
+                .catch(error => console.log(error));
+        </script>
+
+        <!-- <section class="all-games">
             <div>
                 <div class="PC-game2">
                     <img src="images/GameHub_covers_pingpong.jpeg" alt="PC-game" id="PC-game">
@@ -77,7 +106,7 @@
                     <h3><a href="#">Cyperpunk</a></h3>
                     <p><a href="#">See More</a></p>
                 </div>
-                
+
             </div>
             <div>
                 <div class="PC-game2">
@@ -91,7 +120,7 @@
                     <p><a href="#">See More</a></p>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div>
@@ -111,4 +140,5 @@
         </div>
     </footer>
 </body>
+
 </html>

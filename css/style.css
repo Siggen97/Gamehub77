@@ -99,16 +99,18 @@ main .head-games div {
 .PC-game h3 a {
   color: #ffb703;
 }
-main .all-games {
+main .all-games, section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10%;
-  gap: 2rem;
+  gap: 1rem;
 }
-main .all-games div {
+main section div {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  width: 30rem;
+  gap: 1rem;
 }
 .PC-game2 {
   display: flex;
