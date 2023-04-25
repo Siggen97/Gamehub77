@@ -44,11 +44,15 @@
 
                         const img = document.createElement('img');
                         img.src = game.image;
-
                         game2Div.appendChild(img);
 
-                        const title = document.createElement('title');
-                        
+                        const title = document.createElement('h3');
+                        title.innerHTML = '<a>' + game.title + '</a>';
+
+                        const a = document.createElement('a');
+                        a.href = 
+
+                        game2Div.appendChild(title);
 
                         document.querySelector('section').appendChild(outerDiv);
                     })
