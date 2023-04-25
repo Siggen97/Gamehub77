@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gamehub is a website were you can buy video games for PC. The website is always up to date, with price and the newest games out there.">
+    <meta name="description"
+        content="Gamehub is a website were you can buy video games for PC. The website is always up to date, with price and the newest games out there.">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <title>Game Hub</title>
@@ -21,28 +23,76 @@
             <a href="contact.html">Contact</a>
             <a href="forum.html">GameHub Forum</a>
         </nav>
-        <div class="user-cart">
-            <a href=""><img src="images/user.png"alt="user-icon"></a>
-            <a href=""><img src="images/shopping-cart.png"alt="cart-icon"></a>
-        </div>
     </header>
-     <main></main>
-     <footer>
-      <div>
-          <a href="index.html">GameHub</a>
-          <a href="all-games.html">All Games</a>
-          <a href="forum.html">Forum</a>
-      </div>
-      <div>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="#">FAQ</a>
-      </div>
-      <div>
-          <a href="#">Terms of use</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Trustpolice</a>
-      </div>
-  </footer>
-  </body>
+    <main>
+        <section>
+            <div></div>
+        </section>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const productId = params.get('id');
+
+            const apiUrl = 'https://api.noroff.dev/api/v1/gamehub/' + productId;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+
+                    const outerDiv = document.createElement('div');
+                    const game2Div = document.createElement('div');
+                    game2Div.classList.add('PC-game2');
+                    outerDiv.appendChild(game2Div);
+
+                    const productTitle = document.createElement('h3');
+                    productTitle.innerText = data.title;
+                    game2Div.appendChild(productTitle);
+
+                    const productImage = document.createElement('img');
+                    productImage.src = data.image;
+                    game2Div.appendChild(productImage);
+
+                    const productPrice = document.createElement('p');
+                    productPrice.innerText = 'Price: ' + data.price;
+                    game2Div.appendChild(productPrice);
+
+                    const releaseDate = document.createElement('p');
+                    releaseDate.innerText = 'Release Date: ' + data.released;
+                    game2Div.appendChild(releaseDate);
+
+                    const ageRating = document.createElement('p');
+                    ageRating.innerText = data.ageRating;
+                    game2Div.appendChild(ageRating);
+
+                    const description = document.createElement('p');
+                    description.innerText = data.description;
+                    outerDiv.appendChild(description);
+
+                    document.querySelector('section').appendChild(outerDiv);
+
+                })
+                .catch(error => {
+                    console.error('Error fetching product data:', error);
+                });
+        </script>
+    </main>
+    <footer>
+        <div>
+            <a href="index.html">GameHub</a>
+            <a href="all-games.html">All Games</a>
+            <a href="forum.html">Forum</a>
+        </div>
+        <div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Trustpolice</a>
+        </div>
+    </footer>
+</body>
+
 </html>

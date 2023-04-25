@@ -104,13 +104,12 @@ main .all-games, section {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10%;
-  gap: 1rem;
+  gap: 3rem;
 }
 main section div {
   display: flex;
   justify-content: center;
-  width: 30rem;
-  gap: 1rem;
+  width: 19rem;
 }
 .PC-game2 {
   display: flex;

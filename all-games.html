@@ -22,10 +22,6 @@
             <a href="contact.html">Contact</a>
             <a href="forum.html">GameHub Forum</a>
         </nav>
-        <div class="user-cart">
-            <a href=""><img src="images/user.png" alt="user-icon"></a>
-            <a href=""><img src="images/shopping-cart.png" alt="cart-icon"></a>
-        </div>
     </header>
     <main>
         <section></section>
@@ -47,12 +43,18 @@
                         game2Div.appendChild(img);
 
                         const title = document.createElement('h3');
-                        title.innerHTML = '<a>' + game.title + '</a>';
+                        title.innerText = game.title;
 
-                        const a = document.createElement('a');
-                        a.href = 
 
-                        game2Div.appendChild(title);
+                        const link = document.createElement('a');
+                        link.href = 'game-page.html?id=' + game.id;
+                        link.appendChild(title);
+
+                        game2Div.appendChild(link);
+
+                        const price = document.createElement('p');
+                        price.innerText = game.price
+                        game2Div.appendChild(price);
 
                         document.querySelector('section').appendChild(outerDiv);
                     })
@@ -60,71 +62,6 @@
                 .catch(error => console.log(error));
         </script>
 
-        <!-- <section class="all-games">
-            <div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers_pingpong.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Ping Pong Championchip</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers10_forgelegend.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Forge Legend</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-            </div>
-            <div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers3_black.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Black</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers4_furious.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Furious</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-            </div>
-            <div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers6_spacewar.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Space War</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers7_racing.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Racing</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-            </div>
-        </section>
-        <section class="all-games">
-            <div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers8_bxer.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Boxer/a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers9_cyperpunk.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Cyperpunk</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-
-            </div>
-            <div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers2_superduper.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Super Duper</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-                <div class="PC-game2">
-                    <img src="images/GameHub_covers5_assassin.jpeg" alt="PC-game" id="PC-game">
-                    <h3><a href="#">Assassin</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-            </div>
-        </section> -->
     </main>
     <footer>
         <div>
