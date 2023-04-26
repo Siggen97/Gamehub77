@@ -24,22 +24,20 @@
             <a href="forum.html">GameHub Forum</a>
         </nav>
     </header>
-    <main>
-        <section class="head-games">
-            <h2>Coming Soon</h2>
-            <div>
-                <div class="PC-game">
-                    <img src="images/The-Last-Of-Us-PC.jpg" alt="PC-game" id="PC-game">
-                    <h3><a href="game-page.html">The Last of Us</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
-                <div class="PC-game">
-                    <img src="images/Star-wars-jedi-survivor-PC.jpg" alt="PC-game" id="PC-game">
-                    <h3><a href="game-page.html">Star Wars Jedi: Survivor</a></h3>
-                    <p><a href="#">See More</a></p>
-                </div>
+    <div class="head-games">
+        <h2>Coming Soon</h2>
+        <div>
+            <div class="PC-game">
+                <img src="images/The-Last-Of-Us-PC.jpg" alt="PC-game" id="PC-game">
+                <h3><a href="game-page.html">The Last of Us</a></h3>
             </div>
-        </section>
+            <div class="PC-game">
+                <img src="images/Star-wars-jedi-survivor-PC.jpg" alt="PC-game" id="PC-game">
+                <h3><a href="game-page.html">Star Wars Jedi: Survivor</a></h3>
+            </div>
+        </div>
+    </div>
+    <main>
         <section></section>
         <script>
             fetch('https://api.noroff.dev/api/v1/gamehub')
@@ -51,7 +49,7 @@
                     data.forEach(game => {
                         const outerDiv = document.createElement('div');
                         const game2Div = document.createElement('div');
-                        game2Div.classList.add('PC-game2');
+                        game2Div.classList.add('XBOXgame');
                         outerDiv.appendChild(game2Div);
 
                         const img = document.createElement('img');
@@ -69,7 +67,7 @@
                         game2Div.appendChild(link);
 
                         const price = document.createElement('p');
-                        price.innerText = 'Price: $'+game.price
+                        price.innerText = 'Price: $' + game.price
                         game2Div.appendChild(price);
 
                         document.querySelector('section').appendChild(outerDiv);

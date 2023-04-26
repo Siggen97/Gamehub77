@@ -50,14 +50,14 @@ footer div a {
   color: #ffb703;
 }
 
-main .head-games {
+.head-games {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
 }
-main .head-games div {
+.head-games div {
   display: flex;
   gap: 1rem;
 }
@@ -78,18 +78,14 @@ main .head-games div {
   color: #ffb703;
 }
 main section {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  margin-top: 10%;
-  gap: 3rem;
+  justify-items: center;
+  margin-top: 15%;
+  gap: 1.5rem;
 }
-main section div {
-  display: flex;
-  align-items: flex-start;
-  width: 20rem;
-}
-.PC-game2 {
+.XBOXgame {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,20 +94,40 @@ main section div {
   -webkit-backdrop-filter: blur(20px);
   padding: 15px;
   border-radius: 20px;
-  width: 30rem;
+  width: 18rem;
 }
-.PC-game2 img {
-  width: 25rem;
+.XBOXgame img {
+  width: 16rem;
 }
+.productPage {
+  display: flex;
+  justify-content: center;
+}
+.XBOXproduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4ca9c033;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 15px;
+  border-radius: 20px;
+  width: 20rem;
+}
+.XBOXproduct img {
+  width: 18rem;
+}
+
 .gameProduct div {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .titleDescription {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
+  text-align: center;
 }
 .titleDescription p {
   width: 15rem;
