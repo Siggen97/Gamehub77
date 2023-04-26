@@ -168,3 +168,24 @@ main section {
 .titleDescription p {
 	width: 15rem;
 }
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.contact .contact-container {
+  background-color: #7a929d23;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+.contact .contact-container .contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 5px;
+  padding: 3rem;
+}
+.contact-box label {
+  margin-top: 20px;
+}
