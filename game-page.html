@@ -22,6 +22,11 @@
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact</a>
             <a href="forum.html">GameHub Forum</a>
+            <script>
+                var navbHeight = document.querySelector('nav').offsetHeight;
+                var firstSection = document.querySelector('section');
+                firstSection.style.marginTop = navHeight + 'px';
+            </script>
         </nav>
     </header>
     <main>
@@ -46,33 +51,33 @@
                     const productTitle = document.createElement('h3');
                     productTitle.innerText = data.title;
                     outerDiv.appendChild(productTitle);
-                    
+
                     const productImage = document.createElement('img');
                     productImage.src = data.image;
                     game2Div.appendChild(productImage);
-                    
+
                     const productPrice = document.createElement('p');
                     productPrice.innerText = 'Price: ' + data.price;
                     game2Div.appendChild(productPrice);
-                    
+
                     const releaseDate = document.createElement('p');
                     releaseDate.innerText = 'Release Date: ' + data.released;
                     game2Div.appendChild(releaseDate);
-                    
+
                     const ageRating = document.createElement('p');
                     ageRating.innerText = data.ageRating;
                     game2Div.appendChild(ageRating);
-                    
+
                     const titleDescription = document.createElement('div');
                     titleDescription.classList.add('titleDescription');
-                    
+
                     const description = document.createElement('p');
                     description.classList.add('gameDescription');
                     description.innerText = data.description;
                     titleDescription.appendChild(productTitle)
                     titleDescription.appendChild(description);
                     outerDiv.appendChild(titleDescription);
-                    
+
 
 
                     document.querySelector('section').appendChild(outerDiv);
