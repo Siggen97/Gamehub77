@@ -16,13 +16,32 @@
     <header>
         <h1>GameHub</h1>
         <h3>The Universe of Gaming</h3>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="all-games.html">All Games</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="forum.html">GameHub Forum</a>
-        </nav>
+        <div class="navBar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="all-games.html">All Games</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="forum.html">GameHub Forum</a>
+                <button class="hamburger">
+                    <span class="icon"></span>
+                </button>
+                <script>
+                    var navbHeight = document.querySelector('nav').offsetHeight;
+                    var firstSection = document.querySelector('section');
+                    firstSection.style.marginTop = navHeight + 'px';
+                </script>
+            </nav>
+            <script>
+                var hamburger = document.querySelector('.hamburger');
+                var nav = document.querySelector('nav');
+
+                hamburger.addEventListener('click', function () {
+                    hamburger.classList.toggle('is-active');
+                    nav.classList.toggle('is-active');
+                });
+            </script>
+        </div>
     </header>
     <div class="head-games">
         <h2>Coming Soon</h2>
