@@ -39,33 +39,13 @@ nav a:hover {
 	transition: 0.4s;
 	transform: scale(1.1);
 }
-.hamburger {
-	background-color: transparent;
-	border: none;
-	padding: 10px;
-	cursor: pointer;
-}
-
-.hamburger .icon {
+.cartUserIcons {
 	display: block;
-	width: 24px;
-	height: 2px;
-	background-color: #333;
-	margin: 5px auto;
-	transition: transform 0.3s ease-in-out;
+	float: right;
+	margin-right: 2em;
 }
-
-.hamburger.is-active .icon {
-	transform: rotate(45deg) translate(4px, 4px);
-	background-color: #fff;
-}
-
-.hamburger.is-active .icon:before {
-	transform: rotate(90deg) translate(-4px, 0px);
-}
-
-.hamburger.is-active .icon:after {
-	transform: rotate(-90deg) translate(-4px, 0px);
+.cartUserIcons a {
+	padding: 10px;
 }
 footer {
 	background-image: linear-gradient(#219dbc1f, #02304729);
