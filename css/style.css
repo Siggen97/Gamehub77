@@ -105,7 +105,7 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #4ca9c029;
+	background-color: #7a8e9733;
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
 	padding: 15px;
@@ -114,6 +114,7 @@ main section {
 }
 .XBOXgame img {
 	width: 16rem;
+	border-radius: 15px;
 }
 .productPage {
 	display: flex;
@@ -123,7 +124,7 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #4ca9c025;
+	background-color: #7a929d81;
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
 	padding: 15px;
@@ -149,23 +150,23 @@ main section {
 	width: 15rem;
 }
 .contact {
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
 }
 .contact .contact-container {
-  background-color: #7a929d23;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 20px;
+	background-color: #7a929d23;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 20px;
 }
 .contact .contact-container .contact-box {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  gap: 5px;
-  padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: 5px;
+	padding: 3rem;
 }
 .contact-box label {
-  margin-top: 20px;
+	margin-top: 20px;
 }

@@ -1,4 +1,4 @@
-[
+	[
 	{
 		id: 'ded6041a-622f-4fb4-81e4-96fcfdad4dff',
 		title: 'Ping Pong Championship',
