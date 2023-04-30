@@ -1,8 +1,3 @@
-const loader = document.getElementById('preLoader');
-window.addEventListener('load', function () {
-	loader.style.display = 'none';
-});
-
 fetch('https://api.noroff.dev/api/v1/gamehub')
 	.then((res) => {
 		return res.json();
@@ -36,3 +31,9 @@ fetch('https://api.noroff.dev/api/v1/gamehub')
 		});
 	})
 	.catch((error) => console.log(error));
+	
+const loader = document.getElementById('preLoader');
+window.addEventListener('load', function () {
+	loader.style.display = 'none';
+});
+
