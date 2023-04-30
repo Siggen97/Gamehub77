@@ -1,3 +1,8 @@
+const loader = document.getElementByClass('loader');
+window.addEventListener('load', function () {
+	loader.style.display = 'none';
+});
+
 fetch('https://api.noroff.dev/api/v1/gamehub')
 	.then((res) => {
 		return res.json();
