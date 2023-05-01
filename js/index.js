@@ -11,11 +11,11 @@ firstSection.style.marginTop = navbHeight + 'px';
 var a;
 function show_hide () {
 	if (a==1){
-		document.getElementsByTagName('nav')[0].style.display = 'flex';
+		document.getElementsByTagName('nav')[0].style.display = 'none';
 		return a=0
 	}
 	else {
-		document.getElementsByTagName('nav')[0].style.display = 'none';
+		document.getElementsByTagName('nav')[0].style.display = 'flex';
 		return a=1
 	}
 }
