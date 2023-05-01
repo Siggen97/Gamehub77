@@ -4,6 +4,10 @@ window.addEventListener('load', function () {
 	loader.style.display = 'none';
 });
 
+var navbHeight = document.querySelector('nav').offsetHeight;
+var firstSection = document.querySelector('section');
+firstSection.style.marginTop = navbHeight + 'px';
+
 var a;
 function show_hide () {
 	if (a==1){
