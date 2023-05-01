@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,10 @@
     <header>
         <h1>GameHub</h1>
         <h3>The Universe of Gaming</h3>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="2em" height="2em" id="menuBar">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg></a>
         <div class="navBar">
             <nav>
                 <a href="index.html">Home</a>
@@ -46,66 +51,14 @@
         <section class="productPage">
         </section>
 
-        <script>
-            const params = new URLSearchParams(window.location.search);
-            const productId = params.get('id');
-
-            const apiUrl = 'https://api.noroff.dev/api/v1/gamehub/' + productId;
-
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-
-                    const outerDiv = document.createElement('div');
-                    const game2Div = document.createElement('div');
-                    game2Div.classList.add('XBOXproduct');
-                    outerDiv.appendChild(game2Div);
-
-                    const productTitle = document.createElement('h3');
-                    productTitle.innerText = data.title;
-                    outerDiv.appendChild(productTitle);
-
-                    const productImage = document.createElement('img');
-                    productImage.src = data.image;
-                    game2Div.appendChild(productImage);
-
-                    const productPrice = document.createElement('p');
-                    productPrice.innerText = 'Price: ' + data.price;
-                    game2Div.appendChild(productPrice);
-
-                    const releaseDate = document.createElement('p');
-                    releaseDate.innerText = 'Release Date: ' + data.released;
-                    game2Div.appendChild(releaseDate);
-
-                    const ageRating = document.createElement('p');
-                    ageRating.innerText = data.ageRating;
-                    game2Div.appendChild(ageRating);
-
-                    const titleDescription = document.createElement('div');
-                    titleDescription.classList.add('titleDescription');
-
-                    const description = document.createElement('p');
-                    description.classList.add('gameDescription');
-                    description.innerText = data.description;
-                    titleDescription.appendChild(productTitle)
-                    titleDescription.appendChild(description);
-                    outerDiv.appendChild(titleDescription);
-
-
-
-                    document.querySelector('section').appendChild(outerDiv);
-
-                })
-                .catch(error => {
-                    console.error('Error fetching product data:', error);
-                });
+        <script src="js/game-page.js">
         </script>
     </main>
     <hr>
     <footer>
         <div>
             <h5>GameHub</h5>
-    
+
         </div>
         <div>
             <a href="index.html">Home</a>

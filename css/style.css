@@ -21,6 +21,11 @@ a {
 a:hover {
 	color: #ffb703;
 }
+#menuBar {
+	position: absolute;
+	top: 0;
+	padding: 1rem;
+}
 nav {
 	position: fixed;
 	display: flex;
