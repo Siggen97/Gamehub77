@@ -21,19 +21,28 @@ a {
 a:hover {
 	color: #ffb703;
 }
-#menuBar {
-	position: absolute;
-	top: 0;
-	padding: 1rem;
+button {
+    position: absolute;
+    top: 1rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+}
+button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
 }
 nav {
-	position: fixed;
-	display: flex;
-	flex-direction: column;
-	font-size: 18px;
-	gap: 2rem;
-	padding: 1rem;
-	border-radius: 20px;
+    position: fixed;
+    display: flex; 
+    flex-direction: column;
+    font-size: 18px;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
 	top: 1;
 	background-color: #02304700;
 	backdrop-filter: blur(20px);
@@ -41,8 +50,8 @@ nav {
 }
 nav a:hover {
 	color: #ffb703;
-	transition: 0.4s;
 	transform: scale(1.1);
+	transition: 0.3s;
 }
 .cartUserIcons {
 	display: block;
