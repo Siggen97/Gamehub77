@@ -24,7 +24,7 @@ a {
 a:hover {
 	color: #ffb703;
 }
-button {
+header button {
     position: absolute;
     top: 1rem;
     background-color: transparent;
@@ -32,7 +32,7 @@ button {
     border-radius: 10px;
     padding: 5px;
 }
-button:hover {
+header button:hover {
     cursor: pointer;
     border: 1px solid black;
 	background-color: #ffb703;
@@ -112,6 +112,19 @@ footer h5 {
 	border: 3px solid transparent;
 	border-bottom-color: #ff3d00;
 }
+.addCart button {
+    margin-left: 50%;
+    top: 1rem;
+    background-color: #7a929d81;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.addCart button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+	background-color: #ffb703;
+}
 
 @keyframes rotation {
 	0% {
@@ -141,10 +154,12 @@ footer h5 {
 .PC-game img {
 	width: 20rem;
 	padding: 5px;
+	border-radius: 20px;
 }
 .PC-game:hover {
 	border: #ffb703 1px solid;
 	background-color: #305e753f;
+	border-radius: 20px;
 }
 .PC-game h3 a {
 	color: #ffb703;
@@ -161,10 +176,11 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #7a8e9733;
+	background-color: #7a929d81;
+	border: 1px #ffb703 solid;
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
-	padding: 15px;
+	padding: 10px;
 	border-radius: 20px;
 	width: 18rem;
 }
@@ -181,6 +197,7 @@ main section {
 	flex-direction: column;
 	align-items: center;
 	background-color: #7a929d81;
+	border: 1px #ffb703 solid;
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
 	padding: 15px;
@@ -189,6 +206,7 @@ main section {
 }
 .XBOXproduct img {
 	width: 18rem;
+	border-radius: 15px;
 }
 
 .gameProduct div {
