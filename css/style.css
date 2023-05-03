@@ -115,7 +115,7 @@ footer h5 {
 .addCart button {
     margin-left: 50%;
     top: 1rem;
-    background-color: #7a929d81;
+    background-color: #7a929d23;
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
@@ -176,7 +176,7 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #7a929d81;
+	background-color: #7a929d23;
 	border: 1px #ffb703 solid;
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
@@ -196,7 +196,7 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #7a929d81;
+	background-color: #7a929d23;
 	border: 1px #ffb703 solid;
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
@@ -243,6 +243,18 @@ main section {
 }
 .contact-box label {
 	margin-top: 20px;
+}
+.contact-box input {
+	border-radius: 5px;
+}
+.contact-box #submit {
+	margin-left: 50%;
+    top: 1rem;
+    background-color: #ffb703;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+	cursor: pointer;
 }
 .aboutUsInfo {
 	display: flex;
