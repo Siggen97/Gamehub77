@@ -40,7 +40,7 @@ header button:hover {
     padding: 5px;
 }
 nav {
-    position: fixed;
+	position: fixed;
     display: none; 
     flex-direction: column;
     font-size: 18px;
@@ -58,13 +58,24 @@ nav a:hover {
 	transition: 0.3s;
 }
 .cartUserIcons {
+	position: absolute;
 	display: block;
-	float: right;
-	margin-right: 2em;
+	right: 2%;
 }
 .cartUserIcons a {
 	padding: 10px;
 }
+.searchInput {
+	position: absolute;
+	display: block;
+	right: 2%;
+	top: 5%;
+}
+.searchInput input {
+	border-radius: 12px;
+	border: #ffb703 2px solid;
+}
+
 hr {
 	margin-top: 20%;
 }
