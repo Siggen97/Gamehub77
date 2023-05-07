@@ -170,11 +170,6 @@ footer h5 {
 	padding: 5px;
 	border-radius: 20px;
 }
-.PC-game:hover {
-	border: #ffb703 1px solid;
-	background-color: #305e753f;
-	border-radius: 20px;
-}
 .PC-game img:hover {
 	transform: scale(1.1);
 }
@@ -199,10 +194,10 @@ main section {
 	-webkit-backdrop-filter: blur(30px);
 	padding: 10px;
 	border-radius: 20px;
-	width: 18rem;
+	width: 16rem;
 }
 .XBOXgame img {
-	width: 16rem;
+	width: 14rem;
 	border-radius: 15px;
 }
 .productPage {
@@ -282,4 +277,30 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 20px;
+}
+@media (max-width: 768px) {
+	.head-games div {
+		flex-wrap: wrap;
+	}
+	.PC-game img:hover{
+		transform: scale(1.0);
+	}
+	.searchInput input{
+		width: 4rem ;
+	}
+	footer {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 968px) {
+	main section {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.XBOXgame {
+		width: 12rem;
+	}
+	.XBOXgame img {
+		width: 10rem;
+	}
 }
