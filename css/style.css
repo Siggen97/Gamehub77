@@ -203,23 +203,6 @@ main section {
 	display: flex;
 	justify-content: center;
 }
-.XBOXproduct {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #7a929d23;
-	border: 1px #ffb703 solid;
-	backdrop-filter: blur(30px);
-	-webkit-backdrop-filter: blur(30px);
-	padding: 15px;
-	border-radius: 20px;
-	width: 20rem;
-}
-.XBOXproduct img {
-	width: 18rem;
-	border-radius: 15px;
-}
-
 .gameProduct div {
 	display: flex;
 	justify-content: center;
@@ -244,6 +227,8 @@ main section {
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	border-radius: 20px;
+	border-radius: 12px;
+	border: #ffb703 1px solid;
 }
 .contact .contact-container .contact-box {
 	display: flex;
@@ -256,6 +241,9 @@ main section {
 	margin-top: 20px;
 }
 .contact-box input {
+	border-radius: 5px;
+}
+textarea {
 	border-radius: 5px;
 }
 .contact-box #submit {

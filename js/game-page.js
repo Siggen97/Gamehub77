@@ -8,7 +8,7 @@ fetch(apiUrl)
 	.then((data) => {
 		const outerDiv = document.createElement('div');
 		const game2Div = document.createElement('div');
-		game2Div.classList.add('XBOXproduct');
+		game2Div.classList.add('XBOXgame');
 		outerDiv.appendChild(game2Div);
 
 		const productTitle = document.createElement('h3');
