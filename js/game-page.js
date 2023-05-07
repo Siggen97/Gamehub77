@@ -43,6 +43,5 @@ fetch(apiUrl)
 
 		document.querySelector('section').appendChild(outerDiv);
 	})
-	.catch((error) => {
-		console.error('Error fetching product data:', error);
-	});
+
+	

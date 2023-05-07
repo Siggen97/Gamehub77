@@ -31,4 +31,4 @@ fetch('https://api.noroff.dev/api/v1/gamehub')
                         document.querySelector('section').appendChild(outerDiv);
                     })
                 })
-                .catch(error => console.log(error));       
+                  

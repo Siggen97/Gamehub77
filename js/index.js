@@ -19,4 +19,3 @@ function show_hide () {
 		return a=1
 	}
 }
-
