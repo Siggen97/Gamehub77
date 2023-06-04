@@ -164,7 +164,6 @@ footer h5 {
 main section {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	justify-content: center;
 	justify-items: center;
 	margin-top: 15%;
 	gap: 1.5rem;
@@ -172,17 +171,17 @@ main section {
 .XBOXgame {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 	background-color: #7a929d23;
 	border: 1px #ffb703 solid;
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
 	padding: 10px;
 	border-radius: 20px;
-	width: 16rem;
+	width: 20rem;
 }
 .XBOXgame img {
-	width: 14rem;
+	width: 90%;
 	border-radius: 15px;
 }
 
