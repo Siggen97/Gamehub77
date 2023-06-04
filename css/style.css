@@ -75,6 +75,9 @@ nav a:hover {
 	border-radius: 12px;
 	border: #ffb703 2px solid;
 }
+label svg {
+	cursor: pointer;
+}
 
 hr {
 	margin-top: 20%;
