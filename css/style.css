@@ -19,10 +19,6 @@ h3 {
 }
 a {
 	text-decoration: none;
-	color: white;
-}
-a:hover {
-	color: #ffb703;
 }
 header button {
     position: absolute;
@@ -74,9 +70,6 @@ nav a:hover {
 .searchInput input {
 	border-radius: 12px;
 	border: #ffb703 2px solid;
-}
-label svg {
-	cursor: pointer;
 }
 
 hr {
@@ -159,6 +152,7 @@ footer h5 {
 .head-games div {
 	display: flex;
 	gap: 1rem;
+	width: 60%;
 }
 .PC-game {
 	display: flex;
@@ -172,12 +166,6 @@ footer h5 {
 	width: 20rem;
 	padding: 5px;
 	border-radius: 20px;
-}
-.PC-game img:hover {
-	transform: scale(1.1);
-}
-.PC-game h3 a {
-	color: #ffb703;
 }
 main section {
 	display: grid;
