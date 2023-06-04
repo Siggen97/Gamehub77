@@ -1,3 +1,5 @@
+/** @format */
+
 body {
 	background-image: linear-gradient(#023047, #219ebc);
 	height: 100%;
@@ -10,7 +12,9 @@ body {
 main {
 	margin-top: 10%;
 }
-h1, p, a {
+h1,
+p,
+a {
 	color: white;
 }
 header h1,
@@ -24,28 +28,28 @@ a {
 	text-decoration: none;
 }
 header button {
-    position: absolute;
-    top: 1rem;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 5px;
+	position: absolute;
+	top: 1rem;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 5px;
 }
 header button:hover {
-    cursor: pointer;
-    border: 1px solid black;
+	cursor: pointer;
+	border: 1px solid black;
 	background-color: #ffb703;
-    border-radius: 10px;
-    padding: 5px;
+	border-radius: 10px;
+	padding: 5px;
 }
 nav {
 	position: fixed;
-    display: none; 
-    flex-direction: column;
-    font-size: 18px;
-    gap: 2rem;
-    padding: 1rem;
-    border-radius: 20px;
+	display: none;
+	flex-direction: column;
+	font-size: 18px;
+	gap: 2rem;
+	padding: 1rem;
+	border-radius: 20px;
 	top: 1;
 	background-color: #02304700;
 	backdrop-filter: blur(20px);
@@ -186,33 +190,32 @@ main section {
 	display: flex;
 }
 .product-container {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
 }
 .product-container img {
 	width: 25rem;
 }
 .product-info {
-  width: 25rem;
+	width: 25rem;
 }
-.addCart {
-	position: absolute;
-	top: 21rem;
-	
+.productPage .addCart {
+	position: relative;
+	top: 13rem;
+	left: 18rem;
 }
 .addCart button {
 	width: 8rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 8px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 8px;
 	background-color: #ffb703;
 }
 .addCart button:hover {
-    cursor: pointer;
-    border: 3px solid black;
+	cursor: pointer;
+	border: 3px solid black;
 }
-
 
 /* Contact */
 .contact {
@@ -246,11 +249,11 @@ textarea {
 }
 .contact-box #submit {
 	margin-left: 50%;
-    top: 1rem;
-    background-color: #ffb703;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
+	top: 1rem;
+	background-color: #ffb703;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
 	cursor: pointer;
 }
 .aboutUsInfo {
@@ -279,11 +282,11 @@ textarea {
 	.head-games div {
 		flex-wrap: wrap;
 	}
-	.PC-game img:hover{
-		transform: scale(1.0);
+	.PC-game img:hover {
+		transform: scale(1);
 	}
-	.searchInput input{
-		width: 4rem ;
+	.searchInput input {
+		width: 4rem;
 	}
 	footer {
 		flex-wrap: wrap;
