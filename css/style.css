@@ -123,9 +123,6 @@ footer h5 {
 	border-bottom-color: #ff3d00;
 }
 .addCart button {
-    margin-left: 50%;
-    top: 1rem;
-    background-color: #7a929d23;
     border: 1px solid black;
     border-radius: 10px;
     padding: 8px;
@@ -196,11 +193,13 @@ main section {
 }
 .productPage {
 	display: flex;
+	flex-direction: column-reverse;
 	justify-content: center;
+	align-items: center;
+
 }
 .gameProduct div {
-	display: flex;
-	justify-content: center;
+	display: inline;
 	gap: 1rem;
 }
 .titleDescription {
