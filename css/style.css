@@ -171,7 +171,7 @@ main section {
 .XBOXgame {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-items: center;
 	background-color: #7a929d23;
 	border: 1px #ffb703 solid;
 	backdrop-filter: blur(30px);
