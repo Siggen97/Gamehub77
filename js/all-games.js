@@ -21,6 +21,7 @@ fetch('https://api.noroff.dev/api/v1/gamehub')
                         const link = document.createElement('a');
                         link.href = 'game-page.html?id=' + game.id;
                         link.appendChild(title);
+                        link.appendChild(img);
 
                         game2Div.appendChild(link);
 
