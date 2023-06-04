@@ -1,4 +1,3 @@
-/** @format */
 
 const params = new URLSearchParams(window.location.search);
 const productId = params.get('id');
@@ -50,4 +49,9 @@ fetch(apiUrl)
 		outerDiv.appendChild(productInfoDiv);
 
 		document.querySelector('section').appendChild(outerDiv);
+	})
+
+	
+.catch((error) => {
+		console.log('Error:', error); 
 	});
