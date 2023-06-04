@@ -49,9 +49,4 @@ fetch(apiUrl)
 		outerDiv.appendChild(productInfoDiv);
 
 		document.querySelector('section').appendChild(outerDiv);
-	})
-
-	
-.catch((error) => {
-		console.log('Error:', error); 
 	});
